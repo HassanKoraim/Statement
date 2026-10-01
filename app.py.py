@@ -33,7 +33,7 @@ st.title("📊 نظام استخراج إفادات شؤون الموظفين")
 # --- إعدادات الفلترة ---
 st.sidebar.header("⚙️ إعدادات الفلترة")
 st.sidebar.info("حدد نطاق الأيام للبحث عن الإفادات التي ستنتهي خلال هذه الفترة:")
-min_days, max_days = st.sidebar.slider("نطاق الأيام (من - إلى):", min_value=0, max_value=90, value=(0, 5))
+min_days, max_days = st.sidebar.slider("نطاق الأيام (من - إلى):", min_value=-30, max_value=90, value=(0, 5))
 
 # --- رفع الملف ---
 uploaded_file = st.file_uploader('قم برفع ملف "إفادات للجيمناي.xlsx"', type=["xlsx", "xls"])
